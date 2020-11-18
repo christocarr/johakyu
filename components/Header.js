@@ -1,10 +1,11 @@
+import NavBar from './NavBar';
 import styles from '../styles/Header.module.css';
 
 function Header() {
 	return (
-		<header>
+		<header className={styles.header}>
 			<h1>序 破 急</h1>
-			<nav></nav>
+			<NavBar />
 		</header>
 	);
 }
