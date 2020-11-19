@@ -1,11 +1,10 @@
 import Header from '../components/Header';
 import Footer from '../components/Footer';
 import Head from 'next/head';
-import styles from '../styles/Layout.module.css';
 
 function Layout({ children, title = 'Johakyu' }) {
 	return (
-		<div className={styles.container}>
+		<div className="h-screen flex flex-col">
 			<Head>
 				<title>{title}</title>
 				<meta charSet="utf-8" />
