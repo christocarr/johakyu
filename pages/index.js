@@ -3,7 +3,7 @@ import styles from '../styles/Home.module.css';
 
 export default function Home() {
 	return (
-		<main className="flex flex-col flex-grow">
+		<main className="flex flex-col flex-grow p-5">
 			<h1 className={styles.title}>
 				Welcome to <a href="https://nextjs.org">Next.js!</a>
 			</h1>
