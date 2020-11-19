@@ -3,8 +3,8 @@ import styles from '../styles/Home.module.css';
 
 export default function Contact() {
 	return (
-		<main className={styles.main}>
-			<h1 className={styles.title}>Contact Us</h1>
+		<main className="flex flex-col flex-grow">
+			<h1>Contact Us</h1>
 		</main>
 	);
 }
