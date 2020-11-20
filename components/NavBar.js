@@ -20,7 +20,7 @@ function NavBar() {
 			</div>
 
 			<ul className={`w-1/2 md:flex md:flex-row md:justify-end ${isMenuOpen ? 'absolute z-50 right-0 top-0 w-full flex flex-col items-end' : 'hidden'}`}>
-				<li onClick={handleClick}>X</li>
+				<li className="md:hidden" onClick={handleClick}>X</li>
 				<li>
 					<Link href="/blog">
 						<a>Blog</a>
