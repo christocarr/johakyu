@@ -3,8 +3,7 @@ import styles from '../styles/Header.module.css';
 
 function Header() {
 	return (
-		<header className={styles.header}>
-			<h1>序 破 急</h1>
+		<header className="p-5">
 			<NavBar />
 		</header>
 	);
