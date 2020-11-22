@@ -1,4 +1,5 @@
 import {useState} from 'react'
+import Image from 'next/image'
 import Link from 'next/link';
 
 function NavBar() {
@@ -9,13 +10,11 @@ function NavBar() {
 		setIsMenuOpen(!isMenuOpen)
 	}
 
-	console.log(isMenuOpen)
-
 	return (
 		<nav className="flex justify-between items-center relative">
 
 			<div className="flex flex-row justify-between w-full md:w-1/2">
-				<h1>序 破 急</h1>
+				<Link href="/"><img src="/johaku-logo.svg" alt="Johayu logo" /></Link>
 				<p className={`${isMenuOpen ? 'hidden' : 'block'} md:hidden`} onClick={handleClick}>Menu</p>
 			</div>
 
