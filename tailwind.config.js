@@ -5,8 +5,17 @@ module.exports = {
   },
   purge: [],
   theme: {
-    extend: {},
+    fontFamily : {
+      'body': ['Jura', 'Roboto', 'sans-serif']
+    },
+    extend: {
+      colors: {
+        'brand-red': '#F14C28'
+      }
+    },
   },
-  variants: {},
+  variants: {
+    backgroundColor: ['responsive', 'hover', 'focus', 'active']
+  },
   plugins: [],
 }
