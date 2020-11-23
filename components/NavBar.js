@@ -13,7 +13,7 @@ function NavBar() {
 	return (
 		<nav className="sm:flex justify-between align-top">
 			<div className="flex align-center justify-between">
-				<div className="w-24 h-8">
+				<div className="w-24 h-8 cursor-pointer">
 					<Link href="/">
 						<img src="/johaku-logo.svg" alt="Johayu logo" />
 					</Link>
