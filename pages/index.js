@@ -1,44 +1,22 @@
 
-import styles from '../styles/Home.module.css';
-
 export default function Home() {
 	return (
-		<main className="flex flex-col flex-grow p-5">
-			<h1 className={styles.title}>
-				Welcome to <a href="https://nextjs.org">Next.js!</a>
-			</h1>
-
-			<p className={styles.description}>
-				Get started by editing{' '}
-				<code className={styles.code}>pages/index.js</code>
-			</p>
-
-			<div className={styles.grid}>
-				<a href="https://nextjs.org/docs" className={styles.card}>
-					<h3>Documentation &rarr;</h3>
-					<p>Find in-depth information about Next.js features and API.</p>
-				</a>
-
-				<a href="https://nextjs.org/learn" className={styles.card}>
-					<h3>Learn &rarr;</h3>
-					<p>Learn about Next.js in an interactive course with quizzes!</p>
-				</a>
-
-				<a
-					href="https://github.com/vercel/next.js/tree/master/examples"
-					className={styles.card}
-				>
-					<h3>Examples &rarr;</h3>
-					<p>Discover and deploy boilerplate example Next.js projects.</p>
-				</a>
-
-				<a
-					href="https://vercel.com/import?filter=next.js&utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-					className={styles.card}
-				>
-					<h3>Deploy &rarr;</h3>
-					<p>Instantly deploy your Next.js site to a public URL with Vercel.</p>
-				</a>
+		<main className="flex flex-col flex-grow">
+			<div className="bg-red-brand-red w-full h-52 relative">
+				{/* <div className="bg-gray-900 bg-opacity-50 w-full h-full absolute"></div> */}
+				<img className="object-contain object-center" src="/static/images/koto_edited.jpg" alt="person playing a koto" />
+				<div className="absolute top-0 left-0 p-5 text-white font-semibold sm">
+					<p>Genre-defying</p>
+					<p>Innovation <span className="text-brand-red">meets</span> Tradition <span className="text-brand-red">meets</span> Diversity</p>
+					<p><span className="text-brand-red">Specialising in Contemporary Asian Arts in the UK</span></p>
+				</div>
+			</div>
+			<div className="p-5">
+				<p className="font-semibold"><span className="text-brand-red">「序」</span>A beginning full of purpose soon fragments, leaps forth.</p>
+				<p className="mt-2 font-semibold"><span className="text-brand-red">「 破 」</span>Then navigate this steady flow, it starts to pull fast.</p>
+				<p className="mt-2 font-semibold"><span className="text-brand-red">「 急 」</span>A dramatic flourish bores life to the emptiness it leaves behind.</p>
+				<p className="mt-2 font-semibold">A moment's pause before we start… and start again we do...</p>
+				<p className="mt-2 font-semibold"><span className="text-brand-red">「 序 破 急 」</span>A tri-part journey, one seamless breath governed solely by the intention that was made. </p>
 			</div>
 		</main>
 	);
