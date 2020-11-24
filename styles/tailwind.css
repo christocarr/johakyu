@@ -1,6 +1,4 @@
 @tailwind base;
-@tailwind components;
-@tailwind utilities;
 
 @layer base {
 	body {
@@ -9,3 +7,11 @@
 		@apply font-body;
 	}
 }
+
+/* Start purging... */
+@tailwind components;
+/* Stop purging. */
+
+/* Start purging... */
+@tailwind utilities;
+/* Stop purging. */
