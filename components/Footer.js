@@ -1,16 +1,7 @@
-import styles from '../styles/Footer.module.css';
-
 function Footer() {
 	return (
-		<footer className={styles.footer}>
-			<a
-				href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-				target="_blank"
-				rel="noopener noreferrer"
-			>
-				Powered by{' '}
-				<img src="/vercel.svg" alt="Vercel Logo" className={styles.logo} />
-			</a>
+		<footer className="p-5 border-t h-20 flex justify-center items-center">
+			<p>Copyright 2020</p>
 		</footer>
 	);
 }
