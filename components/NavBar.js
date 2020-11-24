@@ -15,7 +15,7 @@ function NavBar() {
 			<div className="flex align-center justify-between">
 				<div className="w-24 h-8 cursor-pointer">
 					<Link href="/">
-						<img src="/johaku-logo.svg" alt="Johayu logo" />
+						<img src="/static/images/johaku-logo.svg" alt="Johayu logo" />
 					</Link>
 				</div>
 				<div className="sm:hidden">
