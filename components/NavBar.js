@@ -28,16 +28,16 @@ function NavBar() {
 
 			<div className={`-ml-2 py-5 ${isMenuOpen ? "block" : "hidden"} sm:flex sm:py-0`}>
 				<Link href="/blog">
-					<a className="block px-2 py-1 font-semibold hover:bg-red-600 hover:text-white sm:px-3">Blog</a>
+					<a className="block px-2 py-1 font-semibold hover:bg-brand-red hover:text-white sm:px-3">Blog</a>
 				</Link>
 				<Link href="/about">
-					<a className="block px-2 py-1 mt-1 font-semibold hover:bg-red-600 hover:text-white sm:m-0 sm:px-3">About us</a>
+					<a className="block px-2 py-1 mt-1 font-semibold hover:bg-brand-red hover:text-white sm:m-0 sm:px-3">About us</a>
 				</Link>
 				<Link href="/projects">
-					<a className="block px-2 py-1 mt-1 font-semibold hover:bg-red-600 hover:text-white sm:m-0 sm:px-3">Current Projects</a>
+					<a className="block px-2 py-1 mt-1 font-semibold hover:bg-brand-red hover:text-white sm:m-0 sm:px-3">Current Projects</a>
 				</Link>
 				<Link href="/contact">
-					<a className="block px-2 py-1 mt-1 font-semibold hover:bg-red-600 hover:text-white sm:m-0 sm:px-3 sm:-mr-3">Contact us</a>
+					<a className="block px-2 py-1 mt-1 font-semibold hover:bg-brand-red hover:text-white sm:m-0 sm:px-3 sm:-mr-3">Contact us</a>
 				</Link>
 			</div>
 		</nav>
