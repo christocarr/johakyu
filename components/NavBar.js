@@ -26,7 +26,7 @@ function NavBar() {
 				</div>
 			</div>
 
-			<div className={`-ml-2 py-5 ${isMenuOpen ? "block" : "hidden"} sm:flex sm:py-0`}>
+			<div className={`-ml-2 pt-5 ${isMenuOpen ? "block" : "hidden"} sm:flex sm:py-0`}>
 				<Link href="/blog">
 					<a className="block px-2 py-1 font-semibold hover:bg-brand-red hover:text-white sm:px-3">Blog</a>
 				</Link>
