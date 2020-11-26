@@ -14,7 +14,7 @@ export default function Contact() {
 				</div>
 				<div className="w-5/6 mt-2">
 					<label htmlFor="email">Email<span className="text-brand-red">*</span></label>
-					<input className="w-full px-2 py-1 border border-gray-400" type="email" id="email" name="email" required/>
+					<input className="w-full px-2 py-1 border border-gray-400" type="email" id="email" name="email" placeholder="Watch for typos" required/>
 				</div>
 				<div className="w-5/6 mt-2">
 					<label htmlFor="message">Message<span className="text-brand-red">*</span></label>
