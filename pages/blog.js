@@ -23,12 +23,12 @@ export async function getStaticProps() {
 export default function Blog({ articles }) {
 
 	return (
-		<main className="flex flex-col flex-grow p-5 pt-0 sm:w-2/3 sm:mx-auto sm:mt-5">
+		<main className="flex flex-col flex-grow p-5 pt-0 sm:w-2/3 sm:mx-auto sm:mt-5 lg:w-2/4">
 			<h1 className="font-semibold text-lg">Blog</h1>
 			<h2 className="mt-2 -mb-2">Recent Posts</h2>
       {articles.sort((a, b) => a - b ).map(article => (
       
-        <div className="w-full mt-5 p-5 border shadow" key={article.sys.id}>
+        <div className="w-full mt-5 p-5 border shadow lg:p-10" key={article.sys.id}>
           <div>
             <Image 
               width="800" 
@@ -40,7 +40,7 @@ export default function Blog({ articles }) {
           <div className="flex justify-between mt-2"><h3>{article.fields.title}</h3><p>{article.fields.date.replace(/(\d{4})\-(\d{2})\-(\d{2}).*/, '$3-$2-$1')}</p></div>
           <p className="truncate mt-2">{documentToReactComponents(article.fields.content)}</p>
           <Link href={'/articles/' + article.fields.slug}>
-            <button className="w-full mt-2 border px-2 py-1 border-gray-400 shadow font-semibold hover:shadow-none hover:bg-brand-red hover:text-white" type="button">Read more</button>
+            <button className="w-full mt-2 border px-2 py-1 border-gray-400 shadow font-semibold hover:shadow-none hover:bg-brand-red hover:text-white lg:mt-5" type="button">Read more</button>
           </Link>
         </div>
       

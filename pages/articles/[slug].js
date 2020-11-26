@@ -37,7 +37,7 @@ export async function getStaticProps({ params }) {
 export default function Article({ article }) {
   console.log(article)
   return (
-    <main className="flex flex-col flex-grow p-5 pt-0 sm:w-2/3 sm:mx-auto sm:mt-5">
+    <main className="flex flex-col flex-grow p-5 pt-0 sm:w-2/3 sm:mx-auto sm:mt-5 lg:w-2/4">
       <article>
         <h1>{article.fields.title}</h1>
         <div className="mt-2">
