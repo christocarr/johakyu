@@ -1,3 +1,5 @@
+import Link from 'next/link'
+
 export default function Contact() {
 	return (
 		<main className="flex flex-col flex-grow p-5 pt-0 sm:w-2/3 sm:mx-auto sm:mt-5">
@@ -18,11 +20,19 @@ export default function Contact() {
 				</div>
 				<button className="w-5/6 mt-2 border px-2 py-1 border-gray-400 shadow font-semibold hover:shadow-none hover:bg-brand-red hover:text-white" type="button">Submit</button>
 			</form>
-			<div className="w-full h-10 mt-5 flex justify-around items-center">
-				<img className="w-10 rounded-full shadow cursor-pointer hover:shadow-none" src="/static/social-icons/facebook.png" alt="facebook" />
-				<img className="w-10 rounded-full shadow cursor-pointer hover:shadow-none" src="/static/social-icons/twitter.png" alt="twitter" />
-				<img className="w-10 rounded-full shadow cursor-pointer hover:shadow-none" src="/static/social-icons/instagram.png" alt="instagram" />
-				<img className="w-10 rounded-full shadow cursor-pointer hover:shadow-none" src="/static/social-icons/youtube.png" alt="youtube" />
+			<div className="w-full h-10 mt-10 flex justify-around items-center">
+				<Link href="" >
+					<img className="w-10 rounded-full shadow cursor-pointer hover:shadow-none" src="/static/social-icons/facebook.png" alt="facebook" />
+				</Link>
+				<Link href="" >
+					<img className="w-10 rounded-full shadow cursor-pointer hover:shadow-none" src="/static/social-icons/twitter.png" alt="twitter" />
+				</Link>
+				<Link href="" >
+					<img className="w-10 rounded-full shadow cursor-pointer hover:shadow-none" src="/static/social-icons/instagram.png" alt="instagram" />
+				</Link>
+				<Link href="" >
+					<img className="w-10 rounded-full shadow cursor-pointer hover:shadow-none" src="/static/social-icons/youtube.png" alt="youtube" />
+				</Link>
 			</div>
 		</main>
 	);
