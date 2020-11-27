@@ -34,28 +34,23 @@ export async function getStaticProps({ params }) {
 }
 
 
-export default function Article(props) {
-
-  console.log(props)
-
-  const {title} = props.article.fields
+export default function Article({article}) {
 
   return (
-    <div>{title}</div>
-    // <main className="flex flex-col flex-grow p-5 pt-0 sm:w-2/3 sm:mx-auto sm:mt-5 lg:w-2/4 xl:w-2/5">
-    //   <article>
-    //     <h1>{article.fields.title}</h1>
-    //     <div className="mt-2">
-    //       <Image 
-    //         width="800" 
-    //         height="500" 
-    //         className="object-cover object-center" 
-    //         src={'https:' + article.fields.articleImage.fields.file.url} alt={article.fields.articleImage.fields.title} 
-    //       />
-    //     </div>
-    //     <p className="mt-2">{documentToReactComponents(article.fields.content)}</p>
-    //   </article>
-    // </main>
+    <main className="flex flex-col flex-grow p-5 pt-0 sm:w-2/3 sm:mx-auto sm:mt-5 lg:w-2/4 xl:w-2/5">
+      <article>
+        <h1>{article.fields.title}</h1>
+        <div className="mt-2">
+          <Image 
+            width="800" 
+            height="500" 
+            className="object-cover object-center" 
+            src={'https:' + article.fields.articleImage.fields.file.url} alt={article.fields.articleImage.fields.title} 
+          />
+        </div>
+        <p className="mt-2">{documentToReactComponents(article.fields.content)}</p>
+      </article>
+    </main>
 
   )
 }
