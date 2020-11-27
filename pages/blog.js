@@ -22,11 +22,13 @@ export async function getStaticProps() {
 
 export default function Blog({ articles }) {
 
+  console.log(articles)
+
 	return (
 		<main className="flex flex-col flex-grow p-5 pt-0 sm:w-2/3 sm:mx-auto sm:mt-5 lg:w-2/4 xl:w-2/5">
 			<h1 className="font-semibold text-lg">Blog</h1>
 			<h2 className="mt-2 -mb-2">Recent Posts</h2>
-      {articles.sort((a, b) => a - b ).map(article => (
+      {articles.sort((a, b) => a.sys.createdAt > b.sys.createdAt ? 1 : -1).map(article => (
       
         <div className="w-full mt-5 p-5 border shadow lg:p-10" key={article.sys.id}>
           <div>
