@@ -23,7 +23,7 @@ export async function getStaticPaths() {
 export async function getStaticProps({ params }) {
   let data = await client.getEntries({
     content_type: 'article',
-    'fields.slug': params.slug
+    "fields.slug": params.slug
   })
 
   return {
