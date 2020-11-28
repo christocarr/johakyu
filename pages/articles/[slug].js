@@ -16,15 +16,17 @@ export async function getStaticPaths() {
     paths: data.items.map(item => ({
       params: {slug: item.fields.slug}
     })),
-    fallback: true
+    fallback: false
   }
 }
 
 export async function getStaticProps({ params }) {
   let data = await client.getEntries({
     content_type: 'article',
-    "fields.slug": params.slug
+    'fields.slug': params.slug
   })
+
+  console.log('data:', data.items[0])
 
   return {
     props: {

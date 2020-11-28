@@ -22,8 +22,6 @@ export async function getStaticProps() {
 
 export default function Blog({ articles }) {
 
-  console.log(articles)
-
 	return (
 		<main className="flex flex-col flex-grow p-5 pt-0 sm:w-2/3 sm:mx-auto sm:mt-5 lg:w-2/4 xl:w-2/5">
 			<h1 className="font-semibold text-lg">Blog</h1>
