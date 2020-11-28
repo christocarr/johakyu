@@ -1,17 +1,15 @@
 @tailwind base;
 
-@layer base {
-	body {
-		@apply antialiased;
-		@apply text-gray-800;
-		@apply font-body;
-	}
-}
+/* Write your own custom base styles here */
 
 /* Start purging... */
 @tailwind components;
 /* Stop purging. */
 
+/* Write your own custom component styles here */
+
 /* Start purging... */
 @tailwind utilities;
 /* Stop purging. */
+
+/* Your own custom utilities */
