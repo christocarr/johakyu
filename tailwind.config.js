@@ -1,13 +1,14 @@
 module.exports = {
   purge: ['./components/**/*.{js,ts,jsx,tsx}', './pages/**/*.{js,ts,jsx,tsx}'],
   theme: {
-    fontFamily : {
-      'body': ['Jura', 'Roboto', 'sans-serif']
-    },
     extend: {
+      fontFamily : {
+        'jura': ['Jura', 'Roboto', 'sans-serif'],
+        'roboto': ['Roboto', 'sans-serif']
+      },
       colors: {
         'brand-red': '#F14C28'
-      }
+      },
     },
   },
   variants: {

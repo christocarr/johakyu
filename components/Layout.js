@@ -10,12 +10,10 @@ function Layout({ children, title = 'Johakyu' }) {
 				<title>{title}</title>
 				<meta charSet="utf-8" />
 				<meta name="viewport" content="initial-scale=1.0, width=device-width" />
-				<link rel="preconnect" href="https://fonts.gstatic.com"></link>
-				<link href={`https://fonts.googleapis.com/css2?family=Jura:wght@400;700&display=swap`} rel="stylesheet"></link>
 			</Head>
-			<Header />
-			{children}
-			<Footer />
+				<Header />
+				{children}
+				<Footer />
 		</div>
 	);
 }

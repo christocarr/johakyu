@@ -1,4 +1,5 @@
 import Layout from '../components/Layout';
+import "fontsource-open-sans";
 import '../styles/tailwind.css';
 
 function MyApp({ Component, pageProps }) {
