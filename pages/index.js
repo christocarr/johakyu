@@ -11,11 +11,11 @@ export default function Home() {
 				</div>
 			</div>
 			<div className="p-5">
-				<p className="font-semibold"><span className="text-brand-red">「序」</span>A beginning full of purpose soon fragments, leaps forth.</p>
-				<p className="mt-2 font-semibold"><span className="text-brand-red">「 破 」</span>Then navigate this steady flow, it starts to pull fast.</p>
-				<p className="mt-2 font-semibold"><span className="text-brand-red">「 急 」</span>A dramatic flourish bores life to the emptiness it leaves behind.</p>
-				<p className="mt-2 font-semibold">A moment's pause before we start… and start again we do...</p>
-				<p className="mt-2 font-semibold"><span className="text-brand-red">「 序 破 急 」</span>A tri-part journey, one seamless breath governed solely by the intention that was made. </p>
+				<p><span className="text-brand-red">「序」</span>A beginning full of purpose soon fragments, leaps forth.</p>
+				<p className="mt-2"><span className="text-brand-red">「 破 」</span>Then navigate this steady flow, it starts to pull fast.</p>
+				<p className="mt-2"><span className="text-brand-red">「 急 」</span>A dramatic flourish bores life to the emptiness it leaves behind.</p>
+				<p className="mt-2">A moment's pause before we start… and start again we do...</p>
+				<p className="mt-2"><span className="text-brand-red">「 序 破 急 」</span>A tri-part journey, one seamless breath governed solely by the intention that was made. </p>
 			</div>
 		</main>
 	);
