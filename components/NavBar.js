@@ -29,16 +29,16 @@ function NavBar() {
 			<div className={`-ml-2 pt-5 ${isMenuOpen ? "block" : "hidden"} sm:flex sm:py-0 xl:text-xl`}>
 				<Link href="/about">
 					{/* <a className="block px-2 py-1 mt-1 font-jura sm:m-0 sm:px-3"><span className="hover:bg-brand-red hover:text-white english-text">About us</span><span className="hover:bg-brand-red hover:text-white japanese-text">私たちに関しては</span></a> */}
-					<a className="block px-2 py-2 mt-1 leading-none font-jura hover:bg-brand-red hover:text-white english-text sm:m-0 sm:px-3 about"><span>About us</span></a>
+					<a className="block px-2 py-2 mt-1 font-jura hover:bg-brand-red hover:text-white english-text sm:m-0 sm:px-3 about"><span>About us</span></a>
 				</Link>
 				<Link href="/projects">
-					<a className="block px-2 py-2 mt-1 leading-none font-jura hover:bg-brand-red hover:text-white sm:m-0 sm:px-3 projects"><span>Projects</span></a>
+					<a className="block px-2 py-2 mt-1 font-jura hover:bg-brand-red hover:text-white sm:m-0 sm:px-3 projects"><span>Projects</span></a>
 				</Link>
 				<Link href="/contact">
-					<a className="block px-2 py-2 mt-1 leading-none font-jura hover:bg-brand-red hover:text-white sm:m-0 sm:px-3 contact"><span>Contact us</span></a>
+					<a className="block px-2 py-2 mt-1 font-jura hover:bg-brand-red hover:text-white sm:m-0 sm:px-3 contact"><span>Contact us</span></a>
 				</Link>
 				<Link href="/blog">
-					<a className="block px-2 py-2 leading-none font-jura hover:bg-brand-red hover:text-white sm:px-3 blog"><span>Blog</span></a>
+					<a className="block px-2 py-2 font-jura hover:bg-brand-red hover:text-white sm:px-3 blog"><span>Blog</span></a>
 				</Link>
 			</div>
 		</nav>
