@@ -24,8 +24,8 @@ export default function Blog({ articles }) {
 
 	return (
 		<main className="font-roboto flex flex-col flex-grow p-5 pt-0 sm:w-2/3 sm:mx-auto sm:mt-5 lg:w-2/4 xl:w-2/5">
-			<h1 className="text-lg font-jura">Blog</h1>
-			<h2 className="mt-2 -mb-2 font-jura">Recent Posts</h2>
+			<h1 className="text-xl font-jura">Blog</h1>
+			<h2 className="mt-2 -mb-2 font-jura text-lg">Recent Posts</h2>
       {articles.sort((a, b) => a.sys.createdAt > b.sys.createdAt ? 1 : -1).map(article => (
       
         <div className="w-full mt-5 p-5 border rounded-md border-brand-red bg-brand-red bg-opacity-20 shadow lg:p-10" key={article.sys.id}>
