@@ -27,17 +27,18 @@ function NavBar() {
 			</div>
 
 			<div className={`-ml-2 pt-5 ${isMenuOpen ? "block" : "hidden"} sm:flex sm:py-0`}>
-				<Link href="/blog">
-					<a className="block px-2 py-1 font-jura font-semibold hover:bg-brand-red hover:text-white sm:px-3">Blog</a>
-				</Link>
 				<Link href="/about">
-					<a className="block px-2 py-1 mt-1 font-jura font-semibold hover:bg-brand-red hover:text-white sm:m-0 sm:px-3">About us</a>
+					{/* <a className="block px-2 py-1 mt-1 font-jura font-semibold sm:m-0 sm:px-3"><span className="hover:bg-brand-red hover:text-white english-text">About us</span><span className="hover:bg-brand-red hover:text-white japanese-text">私たちに関しては</span></a> */}
+					<a className="block px-2 py-1 mt-1 font-jura font-semibold hover:bg-brand-red hover:text-white english-text sm:m-0 sm:px-3 about"><span>About us</span></a>
 				</Link>
 				<Link href="/projects">
-					<a className="block px-2 py-1 mt-1 font-jura font-semibold hover:bg-brand-red hover:text-white sm:m-0 sm:px-3">Current Projects</a>
+					<a className="block px-2 py-1 mt-1 font-jura font-semibold hover:bg-brand-red hover:text-white sm:m-0 sm:px-3 projects"><span>Projects</span></a>
 				</Link>
 				<Link href="/contact">
-					<a className="block px-2 py-1 mt-1 font-jura font-semibold hover:bg-brand-red hover:text-white sm:m-0 sm:px-3 sm:-mr-3">Contact us</a>
+					<a className="block px-2 py-1 mt-1 font-jura font-semibold hover:bg-brand-red hover:text-white sm:m-0 sm:px-3 contact"><span>Contact us</span></a>
+				</Link>
+				<Link href="/blog">
+					<a className="block px-2 py-1 font-jura font-semibold hover:bg-brand-red hover:text-white sm:px-3 blog"><span>Blog</span></a>
 				</Link>
 			</div>
 		</nav>

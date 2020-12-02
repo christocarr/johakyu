@@ -13,3 +13,35 @@
 /* Stop purging. */
 
 /* Your own custom utilities */
+
+.about:hover span {
+	display: none;
+}
+
+.about:hover::before {
+	content: '私たちに関しては';
+}
+
+.projects:hover span {
+	display: none;
+}
+
+.projects:hover::before {
+	content: 'プロジェクト';
+}
+
+.contact:hover span {
+	display: none;
+}
+
+.contact:hover::before {
+	content: '連絡先';
+}
+
+.blog:hover span {
+	display: none;
+}
+
+.blog:hover::before {
+	content: 'ブログ';
+}
