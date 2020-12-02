@@ -3,7 +3,7 @@ import Link from 'next/link'
 export default function Contact() {
 	return (
 		<main className="font-roboto flex flex-col flex-grow p-5 pt-0 sm:w-2/3 sm:mx-auto sm:mt-5 lg:w-2/4 xl:w-2/5">
-			<h1 className="font-semibold text-lg font-jura">Contact Us</h1>
+			<h1 className="text-lg font-jura">Contact Us</h1>
 			<form className="p-5 mt-5 border border-brand-red rounded-md bg-brand-red bg-opacity-20 flex flex-col justify-center items-center shadow lg:p-10">
 				<div className="w-5/6">
 					<label htmlFor="fName">Name<span className="text-brand-red">*</span></label>

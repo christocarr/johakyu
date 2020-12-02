@@ -24,7 +24,7 @@ export default function Blog({ articles }) {
 
 	return (
 		<main className="font-roboto flex flex-col flex-grow p-5 pt-0 sm:w-2/3 sm:mx-auto sm:mt-5 lg:w-2/4 xl:w-2/5">
-			<h1 className="font-semibold text-lg font-jura">Blog</h1>
+			<h1 className="text-lg font-jura">Blog</h1>
 			<h2 className="mt-2 -mb-2 font-jura">Recent Posts</h2>
       {articles.sort((a, b) => a.sys.createdAt > b.sys.createdAt ? 1 : -1).map(article => (
       
@@ -40,7 +40,7 @@ export default function Blog({ articles }) {
           <div className="flex justify-between mt-2"><h3 className="font-jura">{article.fields.title}</h3><p>{article.fields.date.replace(/(\d{4})\-(\d{2})\-(\d{2}).*/, '$3-$2-$1')}</p></div>
           <p className="truncate mt-2">{documentToReactComponents(article.fields.content)}</p>
           <Link href={'/articles/' + article.fields.slug}>
-            <button className="w-full mt-2 rounded-md px-2 py-1 bg-white border-gray-400 shadow-md font-semibold hover:shadow-none hover:bg-brand-red hover:text-white lg:mt-5" type="button">Read more</button>
+            <button className="w-full mt-2 rounded-md px-2 py-1 bg-white border-gray-400 shadow-md hover:shadow-none hover:bg-brand-red hover:text-white lg:mt-5" type="button">Read more</button>
           </Link>
         </div>
       
