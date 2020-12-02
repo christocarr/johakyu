@@ -45,3 +45,11 @@
 .blog:hover::before {
 	content: 'ブログ';
 }
+
+.menu:hover span {
+	display: none;
+}
+
+.menu:hover::before {
+	content: 'メニュー';
+}
