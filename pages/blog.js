@@ -25,21 +25,20 @@ export default function Blog({ articles }) {
   const mostRecentArticle = articles.sort((a, b) => (a.sys.createdAt > b.sys.createdAt ? 1 : -1))[0];
 
   return (
-    <main className='font-roboto flex flex-col flex-grow p-5 pt-0 sm:w-2/3 sm:mx-auto sm:mt-5 lg:w-2/4 xl:w-2/5'>
-      <div className="flex flex-col">
-        <div>
+    <main className='font-roboto flex flex-col flex-grow bg-gray-100 pt-0 sm:mt-5'>
+      <div className="flex flex-col bg-white sm:flex-row sm:pb-0">
+        <div className="w-full h-60 relative">
           <Image
-            width='800'
-            height='500'
-            className='object-cover object-center overflow-hidden'
+            layout="fill"
+            objectFit="cover"
             src={'https:' + mostRecentArticle.fields.articleImage.fields.file.url}
             alt={mostRecentArticle.fields.articleImage.fields.title}
           />
         </div>
-        <div>
-          <div className='flex justify-between mt-2'>
-            <h3 className='font-jura'>{mostRecentArticle.fields.title}</h3>
-            <p>
+        <div className="flex flex-col p-5 sm:w-3/5">
+          <div className='flex justify-between'>
+            <h2 className='text-xl font-bold truncate'>{mostRecentArticle.fields.title}</h2>
+            <p className="text-gray-600">
               {new Intl.DateTimeFormat("en-GB", {
                 year: "numeric",
                 month: "long",
@@ -47,58 +46,33 @@ export default function Blog({ articles }) {
               }).format(new Date(mostRecentArticle.fields.date))}
             </p>
           </div>
-            <div className='truncate mt-2'>
-              {documentToReactComponents(mostRecentArticle.fields.content)}
-            </div>
-            <Link href={'/articles/' + mostRecentArticle.fields.slug}>
-              <a>Read more</a>
-            </Link>
+          <div className='h-10 mt-2 text-gray-600'>
+            <p className="truncate">{mostRecentArticle.fields.content.content[0].content[0].value}</p>
+          </div>
+          <Link href={'/articles/' + mostRecentArticle.fields.slug}>
+            <a className="uppercase font-bold text-sm text-gray-600 hover:text-brand-red focus:text-brand-red">Read more</a>
+          </Link>
         </div>
       </div>
-      {articles
-        .sort((a, b) => (a.sys.createdAt > b.sys.createdAt ? 1 : -1))
-        .map((article) => (
-          <div
-            className='w-full mt-5 p-5 border rounded-md border-brand-red bg-brand-red bg-opacity-20 shadow lg:p-10'
-            key={article.sys.id}
-          >
-            <div>
+      <div className="px-5 pb-5 sm:px-20">
+        {articles.filter(article => article.sys.id !== mostRecentArticle.sys.id).sort((a, b) => (a.sys.createdAt > b.sys.createdAt ? 1 : -1)).map(article => (          
+          <div key={article.sys.id} className="flex max-w-lg m-auto bg-white border border-gray-200 mt-5">
+            <div className="w-2/5 relative">
               <Image
-                width='800'
-                height='500'
-                className='object-cover object-center overflow-hidden'
+                layout="fill"
+                objectFit="cover"
                 src={'https:' + article.fields.articleImage.fields.file.url}
                 alt={article.fields.articleImage.fields.title}
               />
             </div>
-            <div className='flex justify-between mt-2'>
-              <h3 className='font-jura'>{article.fields.title}</h3>
-              <p>
-                {article.fields.date.replace(
-                  /(\d{4})\-(\d{2})\-(\d{2}).*/,
-                  '$3-$2-$1'
-                )}
-              </p>
+            <div className="w-3/5 p-8 sm:p-10">
+              <Link href={'/articles/' + article.fields.slug}>
+                <h3 className="font-bold truncate cursor-pointer hover:text-brand-red focus:text-brand-red">{article.fields.title}</h3>
+              </Link>
             </div>
-            <p className='truncate mt-2'>
-              {documentToReactComponents(article.fields.content)}
-            </p>
-            <Link href={'/articles/' + article.fields.slug}>
-              <button
-                className='w-full mt-2 rounded-md px-2 py-1 bg-white border-gray-400 shadow-md hover:shadow-none hover:bg-brand-red hover:text-white lg:mt-5'
-                type='button'
-              >
-                Read more
-              </button>
-            </Link>
           </div>
         ))}
-      {/* <div className="mt-5">
-        <h2>Archived Posts</h2>
-        <div className="w-full mt-3 p-5 border shadow">
-
-        </div>
-      </div> */}
+      </div>
     </main>
   );
 }
