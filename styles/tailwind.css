@@ -14,6 +14,11 @@
 
 /* Your own custom utilities */
 
+body {
+	/* color: #1a202c; */
+	color: #1f2237;
+}
+
 .about:hover span {
 	display: none;
 }
