@@ -20,7 +20,7 @@ export default function Contact() {
 					<label htmlFor="message">Message<span className="text-brand-red">*</span></label>
 					<textarea className="w-full px-2 py-1 border rounded-md" type="text" id="message" name="message" placeholder="Your message..." required></textarea>
 				</div>
-				<button className="w-5/6 mt-0.5 mb-2 border px-2 py-1 bg-white rounded-md shadow-md font-semibold hover:shadow-none hover:bg-brand-red hover:text-white lg:mt-5" type="button">Submit</button>
+				<button className="w-5/6 mt-0.5 mb-2 px-2 py-1 bg-white rounded-md shadow-md font-semibold hover:shadow-none hover:bg-brand-red hover:text-white active:bg-red-600 active:text-white lg:mt-5" type="button">Submit</button>
 			</form>
 			<div className="w-full h-10 mt-10 flex justify-around items-center">
 				<Link href="" >
