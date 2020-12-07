@@ -24,7 +24,7 @@ body {
 }
 
 .about:hover::before {
-	content: '私たちに関しては';
+	content: 'アバウト';
 }
 
 .projects:hover span {
@@ -40,7 +40,7 @@ body {
 }
 
 .contact:hover::before {
-	content: '連絡先';
+	content: 'コンタクト';
 }
 
 .blog:hover span {
