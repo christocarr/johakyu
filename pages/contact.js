@@ -3,8 +3,11 @@ import Link from 'next/link'
 export default function Contact() {
 	return (
 		<main className="font-roboto flex flex-col flex-grow p-5 pt-0 sm:w-2/3 sm:mx-auto sm:mt-5 lg:w-2/4 xl:w-2/5">
-			<h1 className="text-xl font-jura">Contact Us</h1>
-			<form className="p-5 mt-5 border border-brand-red rounded-md bg-brand-red bg-opacity-20 flex flex-col justify-center items-center shadow lg:p-10">
+			<h1 className="text-xl font-jura mb-5 text-brand-red font-bold sm:ml-10 sm:mb-0">Contact Us</h1>
+			<div className="flex sm:mt-5">
+			<h2 className="hidden w-8 text-brand-red font-semibold sm:mr-5 sm:flex sm:flex-col-rev">コンタクト</h2>
+			<div className="flex flex-col w-full">
+			<form className="p-5 border border-brand-red rounded-md bg-brand-red bg-opacity-20 flex flex-col justify-center items-center shadow lg:p-10">
 				<div className="w-5/6">
 					<label htmlFor="fName">Name<span className="text-brand-red">*</span></label>
 					<input className="w-full px-2 py-1 border rounded-md" type="text" id="fName" name="fname" placeholder="First name" required />
@@ -35,6 +38,8 @@ export default function Contact() {
 				<Link href="" >
 					<img className="w-10 rounded-full shadow cursor-pointer hover:shadow-none" src="/static/social-icons/youtube.png" alt="youtube" />
 				</Link>
+				</div>
+				</div>
 			</div>
 		</main>
 	);
