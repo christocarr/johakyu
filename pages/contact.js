@@ -7,6 +7,13 @@ export default function Contact() {
 			<div className="flex sm:mt-5">
 			<h2 className="hidden w-8 text-brand-red font-semibold sm:mr-5 sm:flex sm:flex-col-rev">コンタクト</h2>
 			<div className="flex flex-col w-full">
+			<div className="mb-5">
+					<p>We are currently working on several projects and will release details soon.</p>
+					<p className="mt-5">However, we at Jo-Ha-Kyū Arts are always interested in hearing about your own projects and ideas and will consider anything that falls in line with our company ethos.</p>
+					<p className="mt-5">We encourage you to get in contact via our online form. Looking forward to hearing from you!
+</p>
+					<p className="mt-5 italic">Jo-Ha-Kyū Arts Team</p>
+				</div>
 			<form className="p-5 border border-brand-red rounded-md bg-brand-red bg-opacity-20 flex flex-col justify-center items-center shadow lg:p-10">
 				<div className="w-5/6">
 					<label htmlFor="fName">Name<span className="text-brand-red">*</span></label>

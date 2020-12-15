@@ -4,13 +4,14 @@ export default function Projects() {
 			<h1 className="text-xl font-jura  text-brand-red font-bold sm:ml-10">Projects</h1>
 			<div className="flex mt-5">
 				<h2 className="hidden w-8 text-brand-red font-semibold sm:mr-5 sm:flex sm:flex-col-rev">プロジェクト</h2>
-				<div>
-					<p>We are currently working on several projects and will release details soon.</p>
-					<p className="mt-5">However, we at Jo-Ha-Kyū Arts are always interested in hearing about your own projects and ideas and will consider anything that falls in line with our company ethos.</p>
-					<p className="mt-5">We encourage you to get in contact via our online form. Looking forward to hearing from you!
-</p>
-					<p className="mt-5 italic">Jo-Ha-Kyū Arts Team</p>
-				</div>
+
+				<div className="flex flex-col">
+				<p><span className="text-brand-red font-semibold">「序」</span>A beginning full of purpose soon fragments, leaps forth.</p>
+				<p className="mt-2"><span className="text-brand-red font-semibold">「 破 」</span>Then navigate this steady flow, it starts to pull fast.</p>
+				<p className="mt-2"><span className="text-brand-red font-semibold">「 急 」</span>A dramatic flourish bores life to the emptiness it leaves behind.</p>
+				<p className="mt-2">A moment's pause before we start… and start again we do...</p>
+				<p className="mt-2"><span className="text-brand-red font-semibold">「 序 破 急 」</span>A tri-part journey, one seamless breath governed solely by the intention that was made. </p>
+			</div>
 			</div>
 		</main>
 	);
