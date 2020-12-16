@@ -11,8 +11,6 @@ const images = [
 ]
 
 export default function Home() {
-
-	// const {width} = useWindowWidth()
 	
 	return (
 		<main className="font-roboto flex flex-col flex-grow sm:w-2/3 sm:mx-auto sm:mt-5 lg:w-2/4 xl:w-2/5">
@@ -26,7 +24,7 @@ export default function Home() {
 			</div> */}
 			<Slider autoplay infinite>
 				{images.map((image, i) => (
-					<div key={i} className="relative">
+					<div key={i} className="relative h-full w-full">
 						<Image
 							layout="fill"
 							objectFit="cover"
