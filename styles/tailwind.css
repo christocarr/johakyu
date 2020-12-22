@@ -32,7 +32,8 @@ body {
 }
 
 .projects:hover::before {
-	content: 'プロジェクト';
+	content: 'プロジ ェクト';
+	/* letter-spacing: 0.5em; */
 }
 
 .contact:hover span {
@@ -57,4 +58,9 @@ body {
 
 .menu:hover::before {
 	content: 'メニュー';
+}
+
+.japanese__heading {
+	writing-mode: vertical-lr;
+	text-orientation: upright;
 }

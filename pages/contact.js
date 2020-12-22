@@ -1,12 +1,13 @@
 import Link from 'next/link'
 
 export default function Contact() {
+	const japaneseHeading = 'コンタクト'
 	return (
 		<main className="font-roboto flex flex-col flex-grow p-5 pt-0 sm:w-2/3 sm:mx-auto sm:mt-5 lg:w-2/4 xl:w-2/5">
-			<h1 className="text-xl font-jura mb-5 text-brand-red font-bold sm:ml-10 sm:mb-0">Contact Us</h1>
+			<h1 className="text-xl font-jura mb-5 text-brand-red font-bold sm:ml-11 sm:mb-0">Contact Us</h1>
 			<div className="flex sm:mt-5">
-			<h2 className="hidden w-8 text-brand-red font-semibold sm:mr-5 sm:flex sm:flex-col-rev">コンタクト</h2>
-			<div className="flex flex-col w-full">
+			<h2 className="hidden w-8 text-brand-red font-semibold tracking-widest sm:flex sm:flex-col-rev japanese__heading">{japaneseHeading}</h2>
+			<div className="flex flex-col w-full sm:pl-3">
 			<div className="mb-5">
 					<p>We are currently working on several projects and will release details soon.</p>
 					<p className="mt-5">However, we at Jo-Ha-Kyū Arts are always interested in hearing about your own projects and ideas and will consider anything that falls in line with our company ethos.</p>
