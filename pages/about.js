@@ -2,7 +2,7 @@ export default function About() {
 	const japaneseHeading = 'アバウト'
 	return (
 		<main className="font-roboto flex flex-col flex-grow p-5 pt-0 sm:w-2/3 sm:mx-auto sm:mt-5 lg:w-2/4 xl:w-2/5">
-			<h1 className="text-xl font-jura text-brand-red font-bold sm:ml-11">About Us</h1>
+			<h1 className="text-xl font-jura text-brand-red font-semibold sm:ml-11">About Us</h1>
 			<div className="flex mt-5">
 				<h2 className="hidden w-8 text-brand-red font-semibold tracking-widest sm:flex sm:flex-col-rev japanese__heading">{japaneseHeading}</h2>
 				<div className="sm:pl-3">

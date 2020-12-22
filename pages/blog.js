@@ -36,9 +36,9 @@ export default function Blog({ articles }) {
           />
         </div>
         <div className="flex flex-col p-5 sm:w-3/5">
-          <div className='flex justify-between'>
-            <h2 className='text-xl font-bold truncate'>{mostRecentArticle.fields.title}</h2>
-            <p className="text-gray-600">
+          <div className='flex justify-between align-bottom'>
+            <h2 className='text-xl font-jura font-semibold truncate'>{mostRecentArticle.fields.title}</h2>
+            <p className="text-gray-600 text-sm">
               {new Intl.DateTimeFormat("en-GB", {
                 year: "numeric",
                 month: "long",
@@ -67,7 +67,7 @@ export default function Blog({ articles }) {
             </div>
             <div className="w-3/5 p-8 sm:p-10">
               <Link href={'/articles/' + article.fields.slug}>
-                <h3 className="font-bold truncate cursor-pointer hover:text-brand-red focus:text-brand-red">{article.fields.title}</h3>
+                <h3 className="font-jura font-bold truncate cursor-pointer hover:text-brand-red focus:text-brand-red">{article.fields.title}</h3>
               </Link>
             </div>
           </div>
